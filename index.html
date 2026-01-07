@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainstorming Privado - Seis Sombreros</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🧠 Brainstorming Seguro (Local)</h1>
+            <div id="status">Estado: Cargando modelos...</div>
+        </header>
+
+        <main>
+            <div class="panel-left">
+                <button id="recordBtn">🎤 Iniciar Grabación</button>
+                <div id="transcript-box" class="box">
+                    <h3>Transcripción en vivo:</h3>
+                    <p id="live-text">Esperando audio...</p>
+                </div>
+                
+                <div id="hats-container" class="box">
+                    <h3>Intervenciones de la IA (6 Sombreros):</h3>
+                    <div id="ai-messages">
+                        </div>
+                </div>
+            </div>
+
+            <div class="panel-right">
+                <div class="canvas-container">
+                    <h3>Pizarra Multimodal</h3>
+                    <canvas id="drawingCanvas" width="500" height="300"></canvas>
+                    <button id="analyzeCanvasBtn">👁️ Analizar Dibujo</button>
+                    <button id="clearCanvasBtn">Borrar</button>
+                </div>
+
+                <div class="rag-container">
+                    <h3>Documentos (RAG)</h3>
+                    <div id="drop-zone">Arrastra tu PDF aquí</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
