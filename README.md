@@ -41,7 +41,7 @@ Arquitectura "Client-side" pura para máxima seguridad:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/TU_USUARIO/Brainstorming-AI-Local.git](https://github.com/TU_USUARIO/Brainstorming-AI-Local.git)
+    git clone [[https://github.com/TU_USUARIO/Brainstorming-AI-Local.git](https://github.com/TU_USUARIO/Brainstorming-AI-Local.git](https://github.com/sara0328/Brainstorming-AI-Local.git))
     ```
 
 2.  **Ejecución:**
