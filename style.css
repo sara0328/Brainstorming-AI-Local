@@ -1,22 +1,137 @@
-body { font-family: sans-serif; background: #f0f2f5; margin: 0; padding: 20px; }
-.container { max-width: 1200px; margin: 0 auto; }
-header { text-align: center; margin-bottom: 20px; }
-#status { background: #ffeeba; padding: 10px; border-radius: 5px; display: inline-block; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    color: #333;
+    padding: 20px;
+}
 
-main { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.box { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; min-height: 200px; }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#status {
+    background: rgb(221, 219, 219);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    min-height: 220px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
 /* Sombreros */
-.hat-card { padding: 10px; margin: 5px 0; border-radius: 5px; border-left: 5px solid; }
-.hat-white { background: #f8f9fa; border-color: #6c757d; } /* Hechos */
-.hat-red { background: #ffeaea; border-color: #dc3545; } /* Emociones */
-.hat-black { background: #e2e3e5; border-color: #343a40; } /* Crítico */
-.hat-yellow { background: #fff3cd; border-color: #ffc107; } /* Optimista */
-.hat-green { background: #d4edda; border-color: #28a745; } /* Creativo */
-.hat-blue { background: #cce5ff; border-color: #007bff; } /* Control */
+.hat-card {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 5px solid;
+}
+
+.hat-white {
+    background: #f8f9fa;
+    border-color: #6c757d;
+}
+
+/* Hechos */
+.hat-red {
+    background: #ffeaea;
+    border-color: #dc3545;
+}
+
+/* Emociones */
+.hat-black {
+    background: #e2e3e5;
+    border-color: #343a40;
+}
+
+/* Crítico */
+.hat-yellow {
+    background: #fff3cd;
+    border-color: #ffc107;
+}
+
+/* Optimista */
+.hat-green {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+/* Creativo */
+.hat-blue {
+    background: #cce5ff;
+    border-color: #007bff;
+}
+
+/* Control */
 
 /* Canvas */
-canvas { background: white; border: 1px solid #ccc; cursor: crosshair; }
-#drop-zone { border: 2px dashed #ccc; padding: 20px; text-align: center; background: white; }
+canvas {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: crosshair;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-.hat-purple { background: #e0cffc; border-color: #6f42c1; } /* Multimodal */
+#drop-zone {
+    border: 2px dashed #aaa;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    background: #fafafa;
+    color: #555;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+#drop-zone.dragover {
+    background: #e8f0fe;
+    border-color: #4285f4;
+}
+
+.hat-purple {
+    background: #e0cffc;
+    border-color: #6f42c1;
+}
+
+/* Multimodal */
+
+h1, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background: #c6d9f7;
+    color: black;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #7cb5f3;
+    transform: translateY(-2px);
+}
